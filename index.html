@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="headerTop">
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo"></div>
@@ -43,12 +43,12 @@
                 <h2 class="banner-title"><span>Скидка</span>-30%</h2>
                 <p class="banner-description">Только при покупке 3-х и более позиций,
                     мы дарим скидку. Акции не&nbsp;суммируются.</p>
-                    <button type="button" class="banner-btn">Купить сейчас</button>
+                    <a href="#menuBurger" class="banner-btn">Купить сейчас</a>
             </div>
         </div>
     </section>
     <main>
-        <section>
+        <section id="menuBurger">
             <div class="container">
                 <div class="menu">
                     <div class="menu-header">
@@ -151,7 +151,7 @@
                 <div class="footer-item">
                     <h3 class="footer-title">Основные&nbsp;ссылки</h3>
                     <nav class="footer-nav">
-                        <a href="index.html" class="footer-link">Меню</a><br>
+                        <a href="in" class="footer-link">Меню</a><br>
                         <a href="#" class="footer-link">Заказ и Доставка</a><br>
                         <a href="#" class="footer-link">Методы оплаты</a><br>
                         <a href="contact.html" class="footer-link">Контакты</a>
@@ -178,6 +178,9 @@
             </div>    
         </div>
     </footer>
+    <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
 
