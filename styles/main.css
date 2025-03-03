@@ -526,6 +526,9 @@ a {
     color: var(--light);
     transition: var(--tr);
 }
+.nav._modal {
+    display: none;
+}
 
 /* contact */
 
