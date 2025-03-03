@@ -42,6 +42,18 @@ a {
     padding-top: 26px;
     padding-bottom: 26px;
 }
+
+.burger-menu {
+    display: none;
+    width: 34px;
+    height: 22px;
+    background-image: url(../images/burger_menu.svg);
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+}
+
 .logo {
     display: block;
     background-image: url(../images/logo.svg);
@@ -680,4 +692,161 @@ a {
         display: block;
         text-align: left;
     }
+}
+
+@media (max-width: 730px) {
+    .header-wrapper {
+        gap: 21px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+    .nav {
+        display: none;
+    }
+    .nav._modal {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-link::after {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .logo {
+        flex-grow: 1;
+        width: 116px;
+        height: 37px;
+    }
+    .modal {
+        width: 100%;
+        max-width: 500px;
+        background-color: #FFF8DC;
+        padding: 40px 15px;
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        text-align: center;
+        transition: var(--tr);
+    }
+    .modal-close {
+        display: block;
+        width: 22px;
+        height: 22px;
+        background-image: url(../images/close.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .hero {
+        padding-top: 70px;
+        padding-bottom: 55px;
+    }
+    .breadcrumbs {
+        font-size: 14px;
+    }
+    .hero-title {
+        font-size: 38px;
+        margin-top: 28px;
+        margin-bottom: 13px;
+    }
+    .hero-description {
+        font-size: 12px;
+        line-height: 166%;
+    }
+    .banner {
+        margin-top: 33px;
+    }
+    .banner-wrapper {
+        padding: 36px 15px 30px 15px;
+    }
+    .banner-title {
+        margin-bottom: 9px;
+    }
+    .banner-description {
+        font-size: 14px;
+        margin-bottom: 20px;
+        max-width: 220px;
+    }
+    .banner-btn {
+        max-width: 198px;
+    }
+    .menu-header {
+        margin-top: 61px;
+        margin-bottom: 32px;
+    }
+    .menu-title {
+        font-size: 27px;
+    }
+    .menu-select {
+        width: 136px;
+        font-size: 12px;
+        flex-basis: 136px;
+        padding: 10px 14px;
+        background-position: 93% center;
+    }
+    .menu-box {
+        gap: 23px 20px;
+    }
+    .menu-thumb {
+        height: 50vw;
+        margin-bottom: 10px;
+    }
+    .menu-name {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    .menu-price {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+    .menu-btn {
+        padding: 10px 21px;
+    }
+    .menu-item._additionally .menu-thumb {
+        height: 30vw;
+    }
+    .footer {
+        margin-top: 80px;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 33px;
+        position: relative;
+    }
+    .footer-logo {
+        margin-bottom: 9px;
+    }
+    .footer-tel._mobile {
+        position: absolute;
+        top: -15px;
+        right: 0;
+    }
+    .footer-tel._mobile + .footer-tel._mobile {
+        top: 23px;
+    }
+    .footer-title {
+        font-size: 18px;
+    }
+    .footer-nav {
+        margin-bottom: 3px;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu-item._additionally .menu-thumb {
+        flex-basis: calc(100% - 130px - 20px);
+        height: 38vw;
+    }
+    .menu-item._additionally .menu-info {
+        flex-basis: 130px;
+    }
+    
 }
